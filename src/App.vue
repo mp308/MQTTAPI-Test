@@ -1,22 +1,25 @@
 <template>
-  <div class="bg-gray-500 min-h-screen"> <!-- Changed to gray background -->
-    <div class="text-center font-mitr">
-      <div>
-        <h1>Web Test IOT API</h1>
-      </div>
-      <div class="text-9xl font-bebas">
-        <h1>ESP 32 DATA</h1>
-      </div>
+  <div class="bg-gray-900 min-h-screen flex flex-col items-center justify-center text-white"> <!-- Changed background to darker gray and centered content -->
+    <div class="text-center font-mitr mb-8">
+      <h1 class="text-4xl">Web Test IOT API</h1>
+    </div>
+    <div class="gradient-text text-9xl font-bebas text-transparent animate-gradient tracking-tight mb-8">
+      <h1>ESP 32 DATA</h1>
+    </div>
+    <div class="bg-slate-100 p-8 rounded-lg shadow-lg"> <!-- Added rounded corners and shadow for better aesthetics -->
       <div class="font-mitr text-blue-600">
-        <p>Temperature: {{ temperature }}°C</p>
-        <p>Humidity: {{ humidity }}%</p>
-        <p>Ultrasonic Distance: {{ ultrasonic_distance }} m</p>
+        <p class="text-xl mb-2">Temperature: {{ temperature }}°C</p>
+        <p class="text-xl mb-2">Humidity: {{ humidity }}%</p>
+        <p class="text-xl">Ultrasonic Distance: {{ ultrasonic_distance }} m</p>
       </div>
-      <div class="font-mitr">
-        <p>
-          netpie / wokwi
-        </p>
-      </div>
+    </div>
+    <div class="p-8 font-embed text-center mt-8">
+      <p class="mb-2">
+        Use @ MQTT_netpie & SimArduno_wokwi
+      </p>
+      <p class="italic">
+        Credit: Sanpitch Phuvapaisankit
+      </p>
     </div>
   </div>
 </template>
@@ -83,5 +86,5 @@ export default {
 </script>
 
 <style>
-/* Your existing styles */
+
 </style>

@@ -10,6 +10,15 @@ module.exports = {
         noto: ['Noto Sans Thai Looped', 'sans-serif'],
         embed: ['Permanent Marker', 'sans-serif']
       },
+      animation: {
+        gradient: "gradient 6s linear infinite",
+      },
+      keyframes: {
+        gradient: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "100%": { backgroundPosition: "100% 50%" },
+        },
+      },
     },
   },
   plugins: [],
